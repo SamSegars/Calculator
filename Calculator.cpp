@@ -1,19 +1,23 @@
 #include <iostream>
+// Makes Add Function
   int add (int first, int second)
   {
      std::cout << "Received " << first << " and " << second << "\n";
      return (first + second);
    }
+// Makes Multiply Function
    int Mult (int first, int second)
 {
     std::cout << "Received " << first << " and " << second << "\n";
     return (first * second);
 }
+// Makes Subtraction Function
   int Sub (int first, int second)
 {
   std::cout << "Received " << first << " and " << second << "\n";
   return (first - second);
 }
+// Makes Divide Function
   int divide ( int first, int second)
 {
   std::cout << "Received " << first << " and " << second << "\n";
@@ -27,6 +31,7 @@ int main()
   const int Subtract = 2;
   const int Add = 3;
   const int Divide = 4;
+// Input refers to Human input for selection
   int Input;
   int d;
   cout << "Options\n";
@@ -37,7 +42,6 @@ int main()
   cout << "Enter Option: ";
   cin >> d;
   Input = (d);
-
       if (Input == Multiply)
 {       cout << "Multiply Selected\n";
         int a,b,c;
@@ -47,7 +51,9 @@ int main()
         cout << "Working...\n";
         c=Mult(a,b);
         cout << "Your result is: " << c << "\n";
-}     else if(Input == Subtract)
+        cout << "Have a great day!\n";
+}
+      else if(Input == Subtract)
 {     cout << "Subtract Selected\n";
       int a,b,c;
       cout << "Enter two numbers: ";
@@ -56,6 +62,7 @@ int main()
       cout << "Working...\n";
       c=Sub(a,b);
       cout << "Your result is: " << c << "\n";
+      cout << "Have a Great Day!\n";
   }
       else if (Input == Add)
 {    cout << "Add Selected \n";
@@ -66,7 +73,9 @@ int main()
       cout << "Working...\n";
       c=add(a,b);
       cout << "Your result is: " << c << "\n";
-}     else
+      cout << "Have a great day!\n";
+}
+      else
 {     cout << "Divide Selected\n";
       int a,b,c;
       cout << "Enter two numbers: " ;
@@ -75,7 +84,7 @@ int main()
       cout << "Working...\n";
       c=divide(a,b);
       cout << "Your result is: " << c << "\n";
+      cout << "Have a great day!\n";
 }
-
 return 0;
 }
