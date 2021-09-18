@@ -28,60 +28,54 @@ int main()
   const int Add = 3;
   const int Divide = 4;
   int Input;
+  int d;
   cout << "Options\n";
   cout << "1 = Multiply\n";
   cout << "2 = Subtract\n";
   cout << "3 = Add\n";
   cout << "4 = Divide\n";
-  cout << "Enter Option:";
-  int d;
+  cout << "Enter Option: ";
   cin >> d;
   Input = (d);
 
-      if (Input = 1)
+      if (Input == Multiply)
 {       cout << "Multiply Selected\n";
         int a,b,c;
         cout << "Enter two numbers: " ;
         cin >> a;
         cin >> b;
-        cout << "\n Working...\n";
+        cout << "Working...\n";
         c=Mult(a,b);
         cout << "Your result is: " << c << "\n";
-      return 0;
-}
-      if (Input = 2)
-{     cout << "Subtract Selected";
+}     else if(Input == Subtract)
+{     cout << "Subtract Selected\n";
       int a,b,c;
       cout << "Enter two numbers: ";
       cin >> a;
       cin >> b;
-      cout << "\n Working...\n";
+      cout << "Working...\n";
       c=Sub(a,b);
       cout << "Your result is: " << c << "\n";
-      return 0;
   }
-      if (Input = 3)
-{    cout << "Add Selected";
+      else if (Input == Add)
+{    cout << "Add Selected \n";
       int a,b,c;
       cout << "Enter two numbers: " ;
       cin >> a;
       cin >> b;
-      cout << "\n Working...\n";
+      cout << "Working...\n";
       c=add(a,b);
-      cout << "Your result is: " << c;
-      return 0;
-}
-      if (Input = 4)
-{     cout << "Divide Selected";
+      cout << "Your result is: " << c << "\n";
+}     else
+{     cout << "Divide Selected\n";
       int a,b,c;
       cout << "Enter two numbers: " ;
       cin >> a;
       cin >> b;
-      cout << "\n Working...\n";
+      cout << "Working...\n";
       c=divide(a,b);
-      cout << "Your result is: " << c;
-      return 0;
+      cout << "Your result is: " << c << "\n";
 }
 
-  return 0;
+return 0;
 }
