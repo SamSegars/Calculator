@@ -45,8 +45,9 @@ int main()
       if (Input == Multiply)
 {       cout << "Multiply Selected\n";
         int a,b,c;
-        cout << "Enter two numbers: " ;
+        cout << "Enter First number: " ;
         cin >> a;
+        cout << "Enter Second number: ";
         cin >> b;
         cout << "Working...\n";
         c=Mult(a,b);
@@ -56,8 +57,9 @@ int main()
       else if(Input == Subtract)
 {     cout << "Subtract Selected\n";
       int a,b,c;
-      cout << "Enter two numbers: ";
+      cout << "Enter First number: ";
       cin >> a;
+      cout << "Enter Second number: ";
       cin >> b;
       cout << "Working...\n";
       c=Sub(a,b);
@@ -67,8 +69,9 @@ int main()
       else if (Input == Add)
 {    cout << "Add Selected \n";
       int a,b,c;
-      cout << "Enter two numbers: " ;
+      cout << "Enter First number: " ;
       cin >> a;
+      cout << "Enter Second number: ";
       cin >> b;
       cout << "Working...\n";
       c=add(a,b);
@@ -78,8 +81,9 @@ int main()
       else
 {     cout << "Divide Selected\n";
       int a,b,c;
-      cout << "Enter two numbers: " ;
+      cout << "Enter First number: " ;
       cin >> a;
+      cout << "Enter Second number: ";
       cin >> b;
       cout << "Working...\n";
       c=divide(a,b);
