@@ -33,15 +33,25 @@ int main()
   const int Divide = 4;
 // Input refers to Human input for selection
   int Input;
-  int d;
+  int result;
   cout << "Options\n";
   cout << "1 = Multiply\n";
   cout << "2 = Subtract\n";
   cout << "3 = Add\n";
   cout << "4 = Divide\n";
   cout << "Enter Option: ";
-  cin >> d;
-  Input = (d);
+  cin >> Input;
+      if (Input >= 5 || Input <= 0)
+      do {
+        cout << "Invalid Selection\n";
+        cout << "Options\n";
+        cout << "1 = Multiply\n";
+        cout << "2 = Subtract\n";
+        cout << "3 = Add\n";
+        cout << "4 = Divide\n";
+        cout << "Enter Option: ";
+        cin >> Input;
+      } while(Input >= 5 || Input <=0);
       if (Input == Multiply)
 {       cout << "Multiply Selected\n";
         int a,b,c;
@@ -50,11 +60,10 @@ int main()
         cout << "Enter Second number: ";
         cin >> b;
         cout << "Working...\n";
-        c=Mult(a,b);
-        cout << "Your result is: " << c << "\n";
-        cout << "Have a great day!\n";
+        result=Mult(a,b);
+        cout << "Your result is: " << result << "\n";
 }
-      else if(Input == Subtract)
+    if(Input == Subtract)
 {     cout << "Subtract Selected\n";
       int a,b,c;
       cout << "Enter First number: ";
@@ -62,11 +71,10 @@ int main()
       cout << "Enter Second number: ";
       cin >> b;
       cout << "Working...\n";
-      c=Sub(a,b);
-      cout << "Your result is: " << c << "\n";
-      cout << "Have a Great Day!\n";
+      result=Sub(a,b);
+      cout << "Your result is: " << result << "\n";
   }
-      else if (Input == Add)
+      if (Input == Add)
 {    cout << "Add Selected \n";
       int a,b,c;
       cout << "Enter First number: " ;
@@ -74,11 +82,10 @@ int main()
       cout << "Enter Second number: ";
       cin >> b;
       cout << "Working...\n";
-      c=add(a,b);
-      cout << "Your result is: " << c << "\n";
-      cout << "Have a great day!\n";
+      result=add(a,b);
+      cout << "Your result is: " << result << "\n";
 }
-      else
+      if (Input == Divide)
 {     cout << "Divide Selected\n";
       int a,b,c;
       cout << "Enter First number: " ;
@@ -86,9 +93,116 @@ int main()
       cout << "Enter Second number: ";
       cin >> b;
       cout << "Working...\n";
-      c=divide(a,b);
-      cout << "Your result is: " << c << "\n";
-      cout << "Have a great day!\n";
+      result=divide(a,b);
+      cout << "Your result is: " << result << "\n";
 }
+      if (Input > 4 || Input <= 0)
+      {cout << "Input was not vaild\n";
+      return 0;}
+
+      int ans;
+      int Ans;
+      cout << "Would you like to continue?\n";
+      cout << "0 = No\n";
+      cout << "1 = Yes\n";
+      cout << "Enter Option:";
+      cin >> Ans;
+      if (Ans != 0 && Ans != 1) {
+        do {
+          cout << "Sorry, Input Invalid.\n";
+          cout << "Please review options\n";
+          cout <<  "0 = No\n";
+          cout <<  "1 = Yes\n";
+          cout << "Enter Option:";
+          cin >> Ans;
+        } while(Ans != 0 && Ans != 1);
+}
+      if (Ans == 1)
+{
+      do
+        {
+         cout << "Using " << result << " as First Number.\n";
+         cout << "Options\n";
+         cout << "1 = Multiply\n";
+         cout << "2 = Subtract\n";
+         cout << "3 = Add\n";
+         cout << "4 = Divide\n";
+         cout << "Enter Option: ";
+         cin >> Input;
+
+         if (Input >= 5 || Input <= 0)
+         do {
+           cout << "Invalid Selection\n";
+           cout << "Options\n";
+           cout << "1 = Multiply\n";
+           cout << "2 = Subtract\n";
+           cout << "3 = Add\n";
+           cout << "4 = Divide\n";
+           cout << "Enter Option: ";
+           cin >> Input;
+         } while(Input >= 5 || Input <=0);
+             if (Input == Multiply)
+       {       cout << "Multiply Selected\n";
+               int b;
+               cout << "Enter Second number: ";
+               cin >> b;
+               cout << "Working...\n";
+               result=Mult(result,b);
+               cout << "Your result is: " << result << "\n";
+       }
+           if(Input == Subtract)
+       {     cout << "Subtract Selected\n";
+             int b;
+             cout << "Enter Second number: ";
+             cin >> b;
+             cout << "Working...\n";
+             result=Sub(result,b);
+             cout << "Your result is: " << result << "\n";
+         }
+             if (Input == Add)
+       {    cout << "Add Selected \n";
+             int b;
+             cout << "Enter Second number: ";
+             cin >> b;
+             cout << "Working...\n";
+             result=add(result,b);
+             cout << "Your result is: " << result << "\n";
+       }
+             if (Input == Divide)
+       {     cout << "Divide Selected\n";
+             int b;
+             cout << "Enter Second number: ";
+             cin >> b;
+             cout << "Working...\n";
+             result=divide(result,b);
+             cout << "Your result is: " << result << "\n";
+       }
+             if (Input > 4 || Input <= 0)
+             {cout << "Input was not vaild\n";
+             return 0;}
+
+         cout << "Would you like to continue?\n";
+         cout << "0 = No\n";
+         cout << "1 = Yes\n";
+         cout << "Enter Option:";
+         cin >> ans;
+            if (ans != 0 && ans != 1) {
+              do {
+                cout << "Sorry, Input Invalid.\n";
+                cout << "Please review options\n";
+                cout <<  "0 = No\n";
+                cout <<  "1 = Yes\n";
+                cout << "Enter Option:";
+                cin >> ans;
+              } while(ans != 0 && ans != 1);
+            }
+        } while(ans == 1);
+}
+      if (Ans = 0)
+{
+         cout << "Have a fantastic day";
+          return 0;
+}
+
 return 0;
 }
