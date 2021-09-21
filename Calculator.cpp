@@ -197,6 +197,7 @@ int main()
                     cout << "Your result is: " << result << "\n";
                     break;
             }
+
             do
             {
                 cout << "Please review options\n";
