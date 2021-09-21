@@ -46,6 +46,7 @@ int main()
     cin >> Input;
 
     if (Input >= 5 || Input <= 0)
+    {
         do {
             cout << "Invalid Selection\n";
             cout << "Options\n";
@@ -56,6 +57,7 @@ int main()
             cout << "Enter Option: ";
             cin >> Input;
         } while(Input >= 5 || Input <=0);
+    }
 
     if (Input == Multiply)
     {       cout << "Multiply Selected\n";
@@ -143,6 +145,7 @@ int main()
             cin >> Input;
 
             if (Input >= 5 || Input <= 0)
+            {
                 do {
                     cout << "Invalid Selection\n";
                     cout << "Options\n";
@@ -153,6 +156,7 @@ int main()
                     cout << "Enter Option: ";
                     cin >> Input;
                 } while(Input >= 5 || Input <=0);
+            }
 
             if (Input == Multiply)
             {       cout << "Multiply Selected\n";
