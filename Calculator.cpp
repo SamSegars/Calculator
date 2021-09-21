@@ -52,7 +52,7 @@ Operation elicitOperation()
         }
     } while (input <= 0 || input >= 5);
 
-    return (Operation)input;
+    return static_cast<Operation>(input);
 }
 
 int elicitContinue()
