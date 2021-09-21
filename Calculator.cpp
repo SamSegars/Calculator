@@ -28,8 +28,7 @@ int runOperation (int a, int b, int operation)
             return divide(a, b);
 
         default:
-            cerr << "Invalid operation in `runOperation`\n";
-            exit(0);
+            throw std::domain_error("Invalid operation in `runOperation`");
     }
 }
 
