@@ -62,8 +62,8 @@ int elicitContinue()
 
     do
     {
-        cout << "Please review options\n";
-        cout <<  "0 = No\n";
+        cout << "Are you ready to exit?\n";
+        cout <<  "0 = No, continue summing\n";
         cout <<  "1 = Yes\n";
         cout << "Enter Option:";
         cin >> input;
@@ -82,6 +82,7 @@ int main()
     int a, b;
     int input;
     int result;
+    int again;
 
     input = elicitOperation();
 
@@ -96,12 +97,9 @@ int main()
     
     cout << "Your result is: " << result << "\n";
 
-    int ans;
-    int Ans;
+    again = elicitContinue();
 
-    Ans = elicitContinue();
-
-    if (Ans == 1)
+    if (again == 1)
     {
         do
         {
@@ -118,8 +116,8 @@ int main()
 
             cout << "Your result is: " << result << "\n";
 
-            ans = elicitContinue();
-        } while (ans == 1);
+            again = elicitContinue();
+        } while (again == 1);
     }
     else
     {
