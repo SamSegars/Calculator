@@ -1,23 +1,19 @@
 #include <iostream>
-// Makes Add Function
 int add (int first, int second)
 {
     std::cout << "Received " << first << " and " << second << "\n";
     return (first + second);
 }
-// Makes Multiply Function
 int mult (int first, int second)
 {
     std::cout << "Received " << first << " and " << second << "\n";
     return (first * second);
 }
-// Makes Subtraction Function
 int sub (int first, int second)
 {
     std::cout << "Received " << first << " and " << second << "\n";
     return (first - second);
 }
-// Makes Divide Function
 int divide ( int first, int second)
 {
     std::cout << "Received " << first << " and " << second << "\n";
@@ -31,7 +27,6 @@ int main()
     const int Subtract = 2;
     const int Add = 3;
     const int Divide = 4;
-// Input refers to Human input for selection
     int Input;
     int result;
     cout << "Options\n";
