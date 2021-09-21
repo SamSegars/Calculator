@@ -11,7 +11,7 @@ int mult   (int first, int second) { return first * second; }
 int sub    (int first, int second) { return first - second; }
 int divide (int first, int second) { return first / second; }
 
-int runOperation (int operation, int a, int b)
+int runOperation (int a, int b, int operation)
 {
     switch (operation)
     {
@@ -107,7 +107,7 @@ int main()
 
         cout << "Working...\n";
 
-        accumulator = runOperation(input, accumulator, b);
+        accumulator = runOperation(accumulator, b, input);
 
         cout << "Your result is: " << accumulator << "\n";
     } while ((again = elicitContinue()));
