@@ -63,52 +63,52 @@ int main()
     if (Input == Multiply)
     {
         cout << "Multiply Selected\n";
-        int a,b,c;
+        int a, b, c;
         cout << "Enter First number: " ;
         cin >> a;
         cout << "Enter Second number: ";
         cin >> b;
         cout << "Working...\n";
-        result=mult(a,b);
+        result=mult(a, b);
         cout << "Your result is: " << result << "\n";
     }
 
     if (Input == Subtract)
     {
         cout << "Subtract Selected\n";
-        int a,b,c;
+        int a, b, c;
         cout << "Enter First number: ";
         cin >> a;
         cout << "Enter Second number: ";
         cin >> b;
         cout << "Working...\n";
-        result=sub(a,b);
+        result=sub(a, b);
         cout << "Your result is: " << result << "\n";
     }
 
     if (Input == Add)
     {
         cout << "Add Selected \n";
-        int a,b,c;
+        int a, b, c;
         cout << "Enter First number: " ;
         cin >> a;
         cout << "Enter Second number: ";
         cin >> b;
         cout << "Working...\n";
-        result=add(a,b);
+        result=add(a, b);
         cout << "Your result is: " << result << "\n";
     }
 
     if (Input == Divide)
     {
         cout << "Divide Selected\n";
-        int a,b,c;
+        int a, b, c;
         cout << "Enter First number: " ;
         cin >> a;
         cout << "Enter Second number: ";
         cin >> b;
         cout << "Working...\n";
-        result=divide(a,b);
+        result=divide(a, b);
         cout << "Your result is: " << result << "\n";
     }
 
@@ -175,7 +175,7 @@ int main()
                 cout << "Enter Second number: ";
                 cin >> b;
                 cout << "Working...\n";
-                result=mult(result,b);
+                result=mult(result, b);
                 cout << "Your result is: " << result << "\n";
             }
 
@@ -186,7 +186,7 @@ int main()
                 cout << "Enter Second number: ";
                 cin >> b;
                 cout << "Working...\n";
-                result=sub(result,b);
+                result=sub(result, b);
                 cout << "Your result is: " << result << "\n";
             }
 
@@ -197,7 +197,7 @@ int main()
                 cout << "Enter Second number: ";
                 cin >> b;
                 cout << "Working...\n";
-                result=add(result,b);
+                result=add(result, b);
                 cout << "Your result is: " << result << "\n";
             }
 
@@ -208,7 +208,7 @@ int main()
                 cout << "Enter Second number: ";
                 cin >> b;
                 cout << "Working...\n";
-                result=divide(result,b);
+                result=divide(result, b);
                 cout << "Your result is: " << result << "\n";
             }
 
