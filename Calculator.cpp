@@ -47,7 +47,8 @@ int main()
 
     if (Input >= 5 || Input <= 0)
     {
-        do {
+        do
+        {
             cout << "Invalid Selection\n";
             cout << "Options\n";
             cout << "1 = Multiply\n";
@@ -60,7 +61,8 @@ int main()
     }
 
     if (Input == Multiply)
-    {       cout << "Multiply Selected\n";
+    {
+        cout << "Multiply Selected\n";
         int a,b,c;
         cout << "Enter First number: " ;
         cin >> a;
@@ -72,7 +74,8 @@ int main()
     }
 
     if(Input == Subtract)
-    {     cout << "Subtract Selected\n";
+    {
+        cout << "Subtract Selected\n";
         int a,b,c;
         cout << "Enter First number: ";
         cin >> a;
@@ -84,7 +87,8 @@ int main()
     }
 
     if (Input == Add)
-    {    cout << "Add Selected \n";
+    {
+        cout << "Add Selected \n";
         int a,b,c;
         cout << "Enter First number: " ;
         cin >> a;
@@ -96,7 +100,8 @@ int main()
     }
 
     if (Input == Divide)
-    {     cout << "Divide Selected\n";
+    {
+        cout << "Divide Selected\n";
         int a,b,c;
         cout << "Enter First number: " ;
         cin >> a;
@@ -108,8 +113,10 @@ int main()
     }
 
     if (Input > 4 || Input <= 0)
-    {cout << "Input was not vaild\n";
-        return 0;}
+    {
+        cout << "Input was not vaild\n";
+        return 0;
+    }
 
     int ans;
     int Ans;
@@ -120,8 +127,10 @@ int main()
     cout << "Enter Option:";
     cin >> Ans;
 
-    if (Ans != 0 && Ans != 1) {
-        do {
+    if (Ans != 0 && Ans != 1)
+    {
+        do
+        {
             cout << "Sorry, Input Invalid.\n";
             cout << "Please review options\n";
             cout <<  "0 = No\n";
@@ -146,7 +155,8 @@ int main()
 
             if (Input >= 5 || Input <= 0)
             {
-                do {
+                do
+                {
                     cout << "Invalid Selection\n";
                     cout << "Options\n";
                     cout << "1 = Multiply\n";
@@ -159,7 +169,8 @@ int main()
             }
 
             if (Input == Multiply)
-            {       cout << "Multiply Selected\n";
+            {
+                cout << "Multiply Selected\n";
                 int b;
                 cout << "Enter Second number: ";
                 cin >> b;
@@ -169,7 +180,8 @@ int main()
             }
 
             if(Input == Subtract)
-            {     cout << "Subtract Selected\n";
+            {
+                cout << "Subtract Selected\n";
                 int b;
                 cout << "Enter Second number: ";
                 cin >> b;
@@ -179,7 +191,8 @@ int main()
             }
 
             if (Input == Add)
-            {    cout << "Add Selected \n";
+            {
+                cout << "Add Selected \n";
                 int b;
                 cout << "Enter Second number: ";
                 cin >> b;
@@ -189,7 +202,8 @@ int main()
             }
 
             if (Input == Divide)
-            {     cout << "Divide Selected\n";
+            {
+                cout << "Divide Selected\n";
                 int b;
                 cout << "Enter Second number: ";
                 cin >> b;
@@ -199,8 +213,10 @@ int main()
             }
 
             if (Input > 4 || Input <= 0)
-            {cout << "Input was not vaild\n";
-                return 0;}
+            {
+                cout << "Input was not vaild\n";
+                return 0;
+            }
 
             cout << "Would you like to continue?\n";
             cout << "0 = No\n";
@@ -208,8 +224,10 @@ int main()
             cout << "Enter Option:";
             cin >> ans;
 
-            if (ans != 0 && ans != 1) {
-                do {
+            if (ans != 0 && ans != 1)
+            {
+                do
+                {
                     cout << "Sorry, Input Invalid.\n";
                     cout << "Please review options\n";
                     cout <<  "0 = No\n";
