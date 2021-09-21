@@ -12,6 +12,7 @@ int main()
 {
     enum Operation { Multiply = 1, Subtract, Add, Divide };
 
+    int a, b;
     int input;
     int result;
 
@@ -31,63 +32,33 @@ int main()
         }
     } while (input <= 0 || input >= 5);
 
+    cout << "Enter First number: ";
+    cin >> a;
+
+    cout << "Enter Second number: ";
+    cin >> b;
+    cout << "Working...\n";
 
     switch (input)
     {
-        int a, b;
-
         case Operation::Multiply:
-            cout << "Enter First number: " ;
-            cin >> a;
-
-            cout << "Enter Second number: ";
-            cin >> b;
-
-            cout << "Working...\n";
             result = mult(a, b);
-
-            cout << "Your result is: " << result << "\n";
             break;
 
         case Operation::Subtract:
-            cout << "Enter First number: ";
-            cin >> a;
-
-            cout << "Enter Second number: ";
-            cin >> b;
-
-            cout << "Working...\n";
             result = sub(a, b);
-
-            cout << "Your result is: " << result << "\n";
             break;
 
         case Operation::Add:
-            cout << "Enter First number: " ;
-            cin >> a;
-
-            cout << "Enter Second number: ";
-            cin >> b;
-
-            cout << "Working...\n";
             result = add(a, b);
-
-            cout << "Your result is: " << result << "\n";
             break;
 
         case Operation::Divide:
-            cout << "Enter First number: " ;
-            cin >> a;
-
-            cout << "Enter Second number: ";
-            cin >> b;
-
-            cout << "Working...\n";
             result = divide(a, b);
-
-            cout << "Your result is: " << result << "\n";
             break;
     }
+    
+    cout << "Your result is: " << result << "\n";
 
     int ans;
     int Ans;
@@ -126,50 +97,34 @@ int main()
                 }
             } while (input <= 0 || input >= 5);
 
+            int b;
+
+            cout << "Enter Second number: ";
+            cin >> b;
+
+            cout << "Working...\n";
+
             switch (input)
             {
-                int b;
-
                 case Operation::Multiply:
-                    cout << "Enter Second number: ";
-                    cin >> b;
-
-                    cout << "Working...\n";
                     result = mult(result, b);
-
-                    cout << "Your result is: " << result << "\n";
                     break;
 
                 case Operation::Subtract:
-                    cout << "Enter Second number: ";
-                    cin >> b;
-
-                    cout << "Working...\n";
                     result = sub(result, b);
-
-                    cout << "Your result is: " << result << "\n";
                     break;
 
                 case Operation::Add:
-                    cout << "Enter Second number: ";
-                    cin >> b;
-
-                    cout << "Working...\n";
                     result = add(result, b);
-
-                    cout << "Your result is: " << result << "\n";
                     break;
 
                 case Operation::Divide:
-                    cout << "Enter Second number: ";
-                    cin >> b;
-
-                    cout << "Working...\n";
                     result = divide(result, b);
 
-                    cout << "Your result is: " << result << "\n";
                     break;
             }
+
+            cout << "Your result is: " << result << "\n";
 
             do
             {
