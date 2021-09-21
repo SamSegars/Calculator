@@ -56,6 +56,27 @@ int elicitOperation()
     return input;
 }
 
+int elicitContinue()
+{
+    int input;
+
+    do
+    {
+        cout << "Please review options\n";
+        cout <<  "0 = No\n";
+        cout <<  "1 = Yes\n";
+        cout << "Enter Option:";
+        cin >> input;
+
+        if (input != 0 && input != 1)
+        {
+            cout << "Sorry, input Invalid.\n";
+        }
+    } while (input != 0 && input != 1);
+
+    return input;
+}
+
 int main()
 {
     int a, b;
@@ -78,19 +99,7 @@ int main()
     int ans;
     int Ans;
 
-    do
-    {
-        cout << "Please review options\n";
-        cout <<  "0 = No\n";
-        cout <<  "1 = Yes\n";
-        cout << "Enter Option:";
-        cin >> Ans;
-
-        if (Ans != 0 && Ans != 1)
-        {
-            cout << "Sorry, input Invalid.\n";
-        }
-    } while (Ans != 0 && Ans != 1);
+    Ans = elicitContinue();
 
     if (Ans == 1)
     {
@@ -109,19 +118,7 @@ int main()
 
             cout << "Your result is: " << result << "\n";
 
-            do
-            {
-                cout << "Please review options\n";
-                cout <<  "0 = No\n";
-                cout <<  "1 = Yes\n";
-                cout << "Enter Option:";
-                cin >> ans;
-
-                if (ans != 0 && ans != 1)
-                {
-                    cout << "Sorry, input Invalid.\n";
-                }
-            } while (ans != 0 && ans != 1);
+            ans = elicitContinue();
         } while (ans == 1);
     }
     else
