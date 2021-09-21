@@ -62,7 +62,7 @@ int elicitContinue()
 
     do
     {
-        cout << "Are you ready to exit?\n";
+        cout << "\nAre you ready to exit?\n";
         cout <<  "1 = Yes\n";
         cout <<  "0 = No, continue with accumulated result\n";
         cout << "Enter Option:";
@@ -74,6 +74,8 @@ int elicitContinue()
         }
     } while (input != 0 && input != 1);
 
+    cout << "\n";
+
     return !input;
 }
 
@@ -81,12 +83,12 @@ void elicitInput(int &a, int &b, bool elicitA)
 {
     if (elicitA)
     {
-        cout << "Enter First number: ";
+        cout << "\nEnter First number: ";
         cin >> a;
     }
     else
     {
-        cout << "Using previous result, " << a << ", as first number.\n";
+        cout << "\nUsing previous result, " << a << ", as first number.\n";
     }
 
     cout << "Enter Second number: ";
@@ -105,7 +107,7 @@ int main()
 
         elicitInput(accumulator, b, !again);
 
-        cout << "Working...\n";
+        cout << "\nWorking... ";
 
         accumulator = runOperation(accumulator, b, input);
 
