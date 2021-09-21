@@ -119,10 +119,8 @@ int main()
             again = elicitContinue();
         } while (again == 1);
     }
-    else
-    {
-        cout << "Have a fantastic day";
-    }
+
+    cout << "Have a fantastic day";
 
     return 0;
 }
