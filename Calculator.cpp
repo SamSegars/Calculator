@@ -77,6 +77,22 @@ int elicitContinue()
     return !input;
 }
 
+void elicitInput(int &a, int &b, bool elicitA)
+{
+    if (elicitA)
+    {
+        cout << "Enter First number: ";
+        cin >> a;
+    }
+    else
+    {
+        cout << "Using previous result, " << a << ", as first number.\n";
+    }
+
+    cout << "Enter Second number: ";
+    cin >> b;
+}
+
 int main()
 {
     int a, b;
@@ -86,11 +102,8 @@ int main()
 
     input = elicitOperation();
 
-    cout << "Enter First number: ";
-    cin >> a;
+    elicitInput(a, b, true);
 
-    cout << "Enter Second number: ";
-    cin >> b;
     cout << "Working...\n";
 
     result = runOperation(input, a, b);
@@ -98,6 +111,7 @@ int main()
     cout << "Your result is: " << result << "\n";
 
     again = elicitContinue();
+    a = result;
 
     if (again)
     {
@@ -105,8 +119,7 @@ int main()
         {
             input = elicitOperation();
 
-            cout << "Enter Second number: ";
-            cin >> b;
+            elicitInput(a, b, false);
 
             cout << "Working...\n";
 
@@ -115,6 +128,7 @@ int main()
             cout << "Your result is: " << result << "\n";
 
             again = elicitContinue();
+            a = result;
         } while (again);
     }
 
