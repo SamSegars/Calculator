@@ -216,7 +216,6 @@ int main()
     else
     {
         cout << "Have a fantastic day";
-        return 0;
     }
 
     return 0;
