@@ -95,7 +95,7 @@ void elicitInput(int &a, int &b, bool elicitA)
 
 int main()
 {
-    int a;
+    int accumulator;
     int again = false;
 
     do
@@ -103,15 +103,13 @@ int main()
         int b;
         int input = elicitOperation();
 
-        elicitInput(a, b, !again);
+        elicitInput(accumulator, b, !again);
 
         cout << "Working...\n";
 
-        int result = runOperation(input, a, b);
+        accumulator = runOperation(input, accumulator, b);
 
-        cout << "Your result is: " << result << "\n";
-
-        a = result;
+        cout << "Your result is: " << accumulator << "\n";
     } while ((again = elicitContinue()));
 
     cout << "Have a fantastic day";
