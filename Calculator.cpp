@@ -1,33 +1,34 @@
 #include <iostream>
 
+using std::cin;
+using std::cout;
+
 int add (int first, int second)
 {
-    std::cout << "Received " << first << " and " << second << "\n";
+    cout << "Received " << first << " and " << second << "\n";
     return (first + second);
 }
 
 int mult (int first, int second)
 {
-    std::cout << "Received " << first << " and " << second << "\n";
+    cout << "Received " << first << " and " << second << "\n";
     return (first * second);
 }
 
 int sub (int first, int second)
 {
-    std::cout << "Received " << first << " and " << second << "\n";
+    cout << "Received " << first << " and " << second << "\n";
     return (first - second);
 }
 
 int divide ( int first, int second)
 {
-    std::cout << "Received " << first << " and " << second << "\n";
+    cout << "Received " << first << " and " << second << "\n";
     return (first / second);
 }
 
 int main()
 {
-    using namespace std;
-
     const int Multiply = 1;
     const int Subtract = 2;
     const int Add = 3;
