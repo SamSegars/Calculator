@@ -57,7 +57,7 @@ int main()
             cout << "4 = Divide\n";
             cout << "Enter Option: ";
             cin >> Input;
-        } while (Input >= 5 || Input <=0);
+        } while (Input >= 5 || Input <= 0);
     }
 
     if (Input == Multiply)
@@ -165,7 +165,7 @@ int main()
                     cout << "4 = Divide\n";
                     cout << "Enter Option: ";
                     cin >> Input;
-                } while (Input >= 5 || Input <=0);
+                } while (Input >= 5 || Input <= 0);
             }
 
             if (Input == Multiply)
