@@ -105,8 +105,6 @@ int main()
         {
             input = elicitOperation();
 
-            int b;
-
             cout << "Enter Second number: ";
             cin >> b;
 
