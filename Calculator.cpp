@@ -57,7 +57,7 @@ int main()
             cout << "4 = Divide\n";
             cout << "Enter Option: ";
             cin >> Input;
-        } while(Input >= 5 || Input <=0);
+        } while (Input >= 5 || Input <=0);
     }
 
     if (Input == Multiply)
@@ -73,7 +73,7 @@ int main()
         cout << "Your result is: " << result << "\n";
     }
 
-    if(Input == Subtract)
+    if (Input == Subtract)
     {
         cout << "Subtract Selected\n";
         int a,b,c;
@@ -137,7 +137,7 @@ int main()
             cout <<  "1 = Yes\n";
             cout << "Enter Option:";
             cin >> Ans;
-        } while(Ans != 0 && Ans != 1);
+        } while (Ans != 0 && Ans != 1);
     }
 
     if (Ans == 1)
@@ -165,7 +165,7 @@ int main()
                     cout << "4 = Divide\n";
                     cout << "Enter Option: ";
                     cin >> Input;
-                } while(Input >= 5 || Input <=0);
+                } while (Input >= 5 || Input <=0);
             }
 
             if (Input == Multiply)
@@ -179,7 +179,7 @@ int main()
                 cout << "Your result is: " << result << "\n";
             }
 
-            if(Input == Subtract)
+            if (Input == Subtract)
             {
                 cout << "Subtract Selected\n";
                 int b;
@@ -234,9 +234,9 @@ int main()
                     cout <<  "1 = Yes\n";
                     cout << "Enter Option:";
                     cin >> ans;
-                } while(ans != 0 && ans != 1);
+                } while (ans != 0 && ans != 1);
             }
-        } while(ans == 1);
+        } while (ans == 1);
     }
     if (Ans = 0)
     {
