@@ -29,12 +29,9 @@ int divide (int first, int second)
 
 int main()
 {
-    const int Multiply = 1;
-    const int Subtract = 2;
-    const int Add = 3;
-    const int Divide = 4;
+    enum Operation { Multiply = 1, Subtract, Add, Divide };
 
-    int Input;
+    int input;
     int result;
 
     cout << "Options\n";
@@ -43,9 +40,9 @@ int main()
     cout << "3 = Add\n";
     cout << "4 = Divide\n";
     cout << "Enter Option: ";
-    cin >> Input;
+    cin >> input;
 
-    if (Input >= 5 || Input <= 0)
+    if (input >= 5 || input <= 0)
     {
         do
         {
@@ -56,11 +53,11 @@ int main()
             cout << "3 = Add\n";
             cout << "4 = Divide\n";
             cout << "Enter Option: ";
-            cin >> Input;
-        } while (Input >= 5 || Input <= 0);
+            cin >> input;
+        } while (input >= 5 || input <= 0);
     }
 
-    if (Input == Multiply)
+    if (input == Operation::Multiply)
     {
         cout << "Multiply Selected\n";
         int a, b, c;
@@ -73,7 +70,7 @@ int main()
         cout << "Your result is: " << result << "\n";
     }
 
-    if (Input == Subtract)
+    if (input == Operation::Subtract)
     {
         cout << "Subtract Selected\n";
         int a, b, c;
@@ -86,7 +83,7 @@ int main()
         cout << "Your result is: " << result << "\n";
     }
 
-    if (Input == Add)
+    if (input == Operation::Add)
     {
         cout << "Add Selected \n";
         int a, b, c;
@@ -99,7 +96,7 @@ int main()
         cout << "Your result is: " << result << "\n";
     }
 
-    if (Input == Divide)
+    if (input == Operation::Divide)
     {
         cout << "Divide Selected\n";
         int a, b, c;
@@ -112,9 +109,9 @@ int main()
         cout << "Your result is: " << result << "\n";
     }
 
-    if (Input > 4 || Input <= 0)
+    if (input > 4 || input <= 0)
     {
-        cout << "Input was not vaild\n";
+        cout << "input was not vaild\n";
         return 0;
     }
 
@@ -131,7 +128,7 @@ int main()
     {
         do
         {
-            cout << "Sorry, Input Invalid.\n";
+            cout << "Sorry, input Invalid.\n";
             cout << "Please review options\n";
             cout <<  "0 = No\n";
             cout <<  "1 = Yes\n";
@@ -151,9 +148,9 @@ int main()
             cout << "3 = Add\n";
             cout << "4 = Divide\n";
             cout << "Enter Option: ";
-            cin >> Input;
+            cin >> input;
 
-            if (Input >= 5 || Input <= 0)
+            if (input >= 5 || input <= 0)
             {
                 do
                 {
@@ -164,11 +161,11 @@ int main()
                     cout << "3 = Add\n";
                     cout << "4 = Divide\n";
                     cout << "Enter Option: ";
-                    cin >> Input;
-                } while (Input >= 5 || Input <= 0);
+                    cin >> input;
+                } while (input >= 5 || input <= 0);
             }
 
-            if (Input == Multiply)
+            if (input == Operation::Multiply)
             {
                 cout << "Multiply Selected\n";
                 int b;
@@ -179,7 +176,7 @@ int main()
                 cout << "Your result is: " << result << "\n";
             }
 
-            if (Input == Subtract)
+            if (input == Operation::Subtract)
             {
                 cout << "Subtract Selected\n";
                 int b;
@@ -190,7 +187,7 @@ int main()
                 cout << "Your result is: " << result << "\n";
             }
 
-            if (Input == Add)
+            if (input == Operation::Add)
             {
                 cout << "Add Selected \n";
                 int b;
@@ -201,7 +198,7 @@ int main()
                 cout << "Your result is: " << result << "\n";
             }
 
-            if (Input == Divide)
+            if (input == Operation::Divide)
             {
                 cout << "Divide Selected\n";
                 int b;
@@ -212,9 +209,9 @@ int main()
                 cout << "Your result is: " << result << "\n";
             }
 
-            if (Input > 4 || Input <= 0)
+            if (input > 4 || input <= 0)
             {
-                cout << "Input was not vaild\n";
+                cout << "input was not vaild\n";
                 return 0;
             }
 
@@ -228,7 +225,7 @@ int main()
             {
                 do
                 {
-                    cout << "Sorry, Input Invalid.\n";
+                    cout << "Sorry, input Invalid.\n";
                     cout << "Please review options\n";
                     cout <<  "0 = No\n";
                     cout <<  "1 = Yes\n";
