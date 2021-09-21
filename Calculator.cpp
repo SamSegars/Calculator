@@ -34,28 +34,22 @@ int main()
     int input;
     int result;
 
-    cout << "Options\n";
-    cout << "1 = Multiply\n";
-    cout << "2 = Subtract\n";
-    cout << "3 = Add\n";
-    cout << "4 = Divide\n";
-    cout << "Enter Option: ";
-    cin >> input;
-
-    if (input >= 5 || input <= 0)
+    do
     {
-        do
+        cout << "Options\n";
+        cout << "1 = Multiply\n";
+        cout << "2 = Subtract\n";
+        cout << "3 = Add\n";
+        cout << "4 = Divide\n";
+        cout << "Enter Option: ";
+        cin >> input;
+
+        if (input <= 0 || input >= 5)
         {
             cout << "Invalid Selection\n";
-            cout << "Options\n";
-            cout << "1 = Multiply\n";
-            cout << "2 = Subtract\n";
-            cout << "3 = Add\n";
-            cout << "4 = Divide\n";
-            cout << "Enter Option: ";
-            cin >> input;
-        } while (input >= 5 || input <= 0);
-    }
+        }
+    } while (input <= 0 || input >= 5);
+
 
     if (input == Operation::Multiply)
     {
@@ -135,52 +129,39 @@ int main()
     int ans;
     int Ans;
 
-    cout << "Would you like to continue?\n";
-    cout << "0 = No\n";
-    cout << "1 = Yes\n";
-    cout << "Enter Option:";
-    cin >> Ans;
-
-    if (Ans != 0 && Ans != 1)
+    do
     {
-        do
+        cout << "Please review options\n";
+        cout <<  "0 = No\n";
+        cout <<  "1 = Yes\n";
+        cout << "Enter Option:";
+        cin >> Ans;
+
+        if (Ans != 0 && Ans != 1)
         {
             cout << "Sorry, input Invalid.\n";
-            cout << "Please review options\n";
-            cout <<  "0 = No\n";
-            cout <<  "1 = Yes\n";
-            cout << "Enter Option:";
-            cin >> Ans;
-        } while (Ans != 0 && Ans != 1);
-    }
+        }
+    } while (Ans != 0 && Ans != 1);
 
     if (Ans == 1)
     {
         do
         {
-            cout << "Using " << result << " as First Number.\n";
-            cout << "Options\n";
-            cout << "1 = Multiply\n";
-            cout << "2 = Subtract\n";
-            cout << "3 = Add\n";
-            cout << "4 = Divide\n";
-            cout << "Enter Option: ";
-            cin >> input;
-
-            if (input >= 5 || input <= 0)
+            do
             {
-                do
+                cout << "Options\n";
+                cout << "1 = Multiply\n";
+                cout << "2 = Subtract\n";
+                cout << "3 = Add\n";
+                cout << "4 = Divide\n";
+                cout << "Enter Option: ";
+                cin >> input;
+
+                if (input <= 0 || input >= 5)
                 {
                     cout << "Invalid Selection\n";
-                    cout << "Options\n";
-                    cout << "1 = Multiply\n";
-                    cout << "2 = Subtract\n";
-                    cout << "3 = Add\n";
-                    cout << "4 = Divide\n";
-                    cout << "Enter Option: ";
-                    cin >> input;
-                } while (input >= 5 || input <= 0);
-            }
+                }
+            } while (input <= 0 || input >= 5);
 
             if (input == Operation::Multiply)
             {
@@ -245,24 +226,19 @@ int main()
                 return 0;
             }
 
-            cout << "Would you like to continue?\n";
-            cout << "0 = No\n";
-            cout << "1 = Yes\n";
-            cout << "Enter Option:";
-            cin >> ans;
-
-            if (ans != 0 && ans != 1)
+            do
             {
-                do
+                cout << "Please review options\n";
+                cout <<  "0 = No\n";
+                cout <<  "1 = Yes\n";
+                cout << "Enter Option:";
+                cin >> ans;
+
+                if (ans != 0 && ans != 1)
                 {
                     cout << "Sorry, input Invalid.\n";
-                    cout << "Please review options\n";
-                    cout <<  "0 = No\n";
-                    cout <<  "1 = Yes\n";
-                    cout << "Enter Option:";
-                    cin >> ans;
-                } while (ans != 0 && ans != 1);
-            }
+                }
+            } while (ans != 0 && ans != 1);
         } while (ans == 1);
     }
 
