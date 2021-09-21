@@ -4,14 +4,14 @@ using std::cerr;
 using std::cin;
 using std::cout;
 
-enum Operation { Multiply = 1, Subtract, Add, Divide };
+enum class Operation { Multiply = 1, Subtract, Add, Divide };
 
 int add    (int first, int second) { return first + second; }
 int mult   (int first, int second) { return first * second; }
 int sub    (int first, int second) { return first - second; }
 int divide (int first, int second) { return first / second; }
 
-int runOperation (int a, int b, int operation)
+int runOperation (int a, int b, Operation operation)
 {
     switch (operation)
     {
@@ -32,7 +32,7 @@ int runOperation (int a, int b, int operation)
     }
 }
 
-int elicitOperation()
+Operation elicitOperation()
 {
     int input;
 
@@ -52,7 +52,7 @@ int elicitOperation()
         }
     } while (input <= 0 || input >= 5);
 
-    return input;
+    return (Operation)input;
 }
 
 int elicitContinue()
@@ -102,7 +102,7 @@ int main()
     do
     {
         int b;
-        int input = elicitOperation();
+        Operation input = elicitOperation();
 
         elicitInput(accumulator, b, !again);
 
