@@ -6,25 +6,29 @@ using std::cout;
 int add (int first, int second)
 {
     cout << "Received " << first << " and " << second << "\n";
-    return (first + second);
+
+    return first + second;
 }
 
 int mult (int first, int second)
 {
     cout << "Received " << first << " and " << second << "\n";
-    return (first * second);
+
+    return first * second;
 }
 
 int sub (int first, int second)
 {
     cout << "Received " << first << " and " << second << "\n";
-    return (first - second);
+
+    return first - second;
 }
 
 int divide (int first, int second)
 {
     cout << "Received " << first << " and " << second << "\n";
-    return (first / second);
+
+    return first / second;
 }
 
 int main()
