@@ -53,7 +53,7 @@ int main()
 
     switch (input)
     {
-        int a, b, c;
+        int a, b;
 
         case Operation::Multiply:
             cout << "Multiply Selected\n";
