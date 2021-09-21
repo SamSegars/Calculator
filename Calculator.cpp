@@ -35,6 +35,7 @@ int runOperation (int a, int b, Operation operation)
 Operation elicitOperation()
 {
     int input;
+    auto predicate = [&input] { return input <= 0 || input >= 5; };
 
     do
     {
@@ -46,11 +47,11 @@ Operation elicitOperation()
         cout << "Enter Option: ";
         cin >> input;
 
-        if (input <= 0 || input >= 5)
+        if (predicate())
         {
-            cout << "Invalid Selection\n";
+            cout << "\nInvalid Selection\n\n";
         }
-    } while (input <= 0 || input >= 5);
+    } while (predicate());
 
     return static_cast<Operation>(input);
 }
@@ -58,20 +59,21 @@ Operation elicitOperation()
 int elicitContinue()
 {
     int input;
+    auto predicate = [&input] { return input != 0 && input != 1; };
 
     do
     {
         cout << "\nAre you ready to exit?\n";
         cout <<  "1 = Yes\n";
         cout <<  "0 = No, continue with accumulated result\n";
-        cout << "Enter Option:";
+        cout << "Enter Option: ";
         cin >> input;
 
-        if (input != 0 && input != 1)
+        if (predicate())
         {
-            cout << "Sorry, input Invalid.\n";
+            cout << "\nSorry, input Invalid.\n\n";
         }
-    } while (input != 0 && input != 1);
+    } while (predicate());
 
     cout << "\n";
 
