@@ -119,13 +119,6 @@ int main()
         cout << "Your result is: " << result << "\n";
     }
 
-    if (input > 4 || input <= 0)
-    {
-        cout << "input was not vaild\n";
-
-        return 0;
-    }
-
     int ans;
     int Ans;
 
@@ -217,13 +210,6 @@ int main()
                 result = divide(result, b);
 
                 cout << "Your result is: " << result << "\n";
-            }
-
-            if (input > 4 || input <= 0)
-            {
-                cout << "input was not vaild\n";
-
-                return 0;
             }
 
             do
