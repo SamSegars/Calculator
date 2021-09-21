@@ -239,7 +239,7 @@ int main()
         } while (ans == 1);
     }
 
-    if (Ans = 0)
+    if (Ans == 0)
     {
         cout << "Have a fantastic day";
         return 0;
