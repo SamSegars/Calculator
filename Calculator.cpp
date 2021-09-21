@@ -51,72 +51,65 @@ int main()
     } while (input <= 0 || input >= 5);
 
 
-    if (input == Operation::Multiply)
+    switch (input)
     {
         int a, b, c;
 
-        cout << "Multiply Selected\n";
-        cout << "Enter First number: " ;
-        cin >> a;
+        case Operation::Multiply:
+            cout << "Multiply Selected\n";
+            cout << "Enter First number: " ;
+            cin >> a;
 
-        cout << "Enter Second number: ";
-        cin >> b;
+            cout << "Enter Second number: ";
+            cin >> b;
 
-        cout << "Working...\n";
-        result = mult(a, b);
+            cout << "Working...\n";
+            result = mult(a, b);
 
-        cout << "Your result is: " << result << "\n";
-    }
+            cout << "Your result is: " << result << "\n";
+            break;
 
-    if (input == Operation::Subtract)
-    {
-        int a, b, c;
+        case Operation::Subtract:
+            cout << "Subtract Selected\n";
+            cout << "Enter First number: ";
+            cin >> a;
 
-        cout << "Subtract Selected\n";
-        cout << "Enter First number: ";
-        cin >> a;
+            cout << "Enter Second number: ";
+            cin >> b;
 
-        cout << "Enter Second number: ";
-        cin >> b;
+            cout << "Working...\n";
+            result = sub(a, b);
 
-        cout << "Working...\n";
-        result = sub(a, b);
+            cout << "Your result is: " << result << "\n";
+            break;
 
-        cout << "Your result is: " << result << "\n";
-    }
+        case Operation::Add:
+            cout << "Add Selected \n";
+            cout << "Enter First number: " ;
+            cin >> a;
 
-    if (input == Operation::Add)
-    {
-        int a, b, c;
+            cout << "Enter Second number: ";
+            cin >> b;
 
-        cout << "Add Selected \n";
-        cout << "Enter First number: " ;
-        cin >> a;
+            cout << "Working...\n";
+            result = add(a, b);
 
-        cout << "Enter Second number: ";
-        cin >> b;
+            cout << "Your result is: " << result << "\n";
+            break;
 
-        cout << "Working...\n";
-        result = add(a, b);
+        case Operation::Divide:
+            cout << "Divide Selected\n";
+            cout << "Enter First number: " ;
+            cin >> a;
 
-        cout << "Your result is: " << result << "\n";
-    }
+            cout << "Enter Second number: ";
+            cin >> b;
 
-    if (input == Operation::Divide)
-    {
-        int a, b, c;
+            cout << "Working...\n";
+            result = divide(a, b);
 
-        cout << "Divide Selected\n";
-        cout << "Enter First number: " ;
-        cin >> a;
-
-        cout << "Enter Second number: ";
-        cin >> b;
-
-        cout << "Working...\n";
-        result = divide(a, b);
-
-        cout << "Your result is: " << result << "\n";
+            cout << "Your result is: " << result << "\n";
+            break;
     }
 
     int ans;
@@ -156,62 +149,54 @@ int main()
                 }
             } while (input <= 0 || input >= 5);
 
-            if (input == Operation::Multiply)
+            switch (input)
             {
                 int b;
 
-                cout << "Multiply Selected\n";
-                cout << "Enter Second number: ";
-                cin >> b;
+                case Operation::Multiply:
+                    cout << "Multiply Selected\n";
+                    cout << "Enter Second number: ";
+                    cin >> b;
 
-                cout << "Working...\n";
-                result = mult(result, b);
+                    cout << "Working...\n";
+                    result = mult(result, b);
 
-                cout << "Your result is: " << result << "\n";
+                    cout << "Your result is: " << result << "\n";
+                    break;
+
+                case Operation::Subtract:
+                    cout << "Subtract Selected\n";
+                    cout << "Enter Second number: ";
+                    cin >> b;
+
+                    cout << "Working...\n";
+                    result = sub(result, b);
+
+                    cout << "Your result is: " << result << "\n";
+                    break;
+
+                case Operation::Add:
+                    cout << "Add Selected \n";
+                    cout << "Enter Second number: ";
+                    cin >> b;
+
+                    cout << "Working...\n";
+                    result = add(result, b);
+
+                    cout << "Your result is: " << result << "\n";
+                    break;
+
+                case Operation::Divide:
+                    cout << "Divide Selected\n";
+                    cout << "Enter Second number: ";
+                    cin >> b;
+
+                    cout << "Working...\n";
+                    result = divide(result, b);
+
+                    cout << "Your result is: " << result << "\n";
+                    break;
             }
-
-            if (input == Operation::Subtract)
-            {
-                int b;
-
-                cout << "Subtract Selected\n";
-                cout << "Enter Second number: ";
-                cin >> b;
-
-                cout << "Working...\n";
-                result = sub(result, b);
-
-                cout << "Your result is: " << result << "\n";
-            }
-
-            if (input == Operation::Add)
-            {
-                int b;
-
-                cout << "Add Selected \n";
-                cout << "Enter Second number: ";
-                cin >> b;
-
-                cout << "Working...\n";
-                result = add(result, b);
-
-                cout << "Your result is: " << result << "\n";
-            }
-
-            if (input == Operation::Divide)
-            {
-                int b;
-
-                cout << "Divide Selected\n";
-                cout << "Enter Second number: ";
-                cin >> b;
-
-                cout << "Working...\n";
-                result = divide(result, b);
-
-                cout << "Your result is: " << result << "\n";
-            }
-
             do
             {
                 cout << "Please review options\n";
