@@ -59,59 +59,76 @@ int main()
 
     if (input == Operation::Multiply)
     {
-        cout << "Multiply Selected\n";
         int a, b, c;
+
+        cout << "Multiply Selected\n";
         cout << "Enter First number: " ;
         cin >> a;
+
         cout << "Enter Second number: ";
         cin >> b;
+
         cout << "Working...\n";
         result = mult(a, b);
+
         cout << "Your result is: " << result << "\n";
     }
 
     if (input == Operation::Subtract)
     {
-        cout << "Subtract Selected\n";
         int a, b, c;
+
+        cout << "Subtract Selected\n";
         cout << "Enter First number: ";
         cin >> a;
+
         cout << "Enter Second number: ";
         cin >> b;
+
         cout << "Working...\n";
         result = sub(a, b);
+
         cout << "Your result is: " << result << "\n";
     }
 
     if (input == Operation::Add)
     {
-        cout << "Add Selected \n";
         int a, b, c;
+
+        cout << "Add Selected \n";
         cout << "Enter First number: " ;
         cin >> a;
+
         cout << "Enter Second number: ";
         cin >> b;
+
         cout << "Working...\n";
         result = add(a, b);
+
         cout << "Your result is: " << result << "\n";
     }
 
     if (input == Operation::Divide)
     {
-        cout << "Divide Selected\n";
         int a, b, c;
+
+        cout << "Divide Selected\n";
         cout << "Enter First number: " ;
         cin >> a;
+
         cout << "Enter Second number: ";
         cin >> b;
+
         cout << "Working...\n";
         result = divide(a, b);
+
         cout << "Your result is: " << result << "\n";
     }
 
     if (input > 4 || input <= 0)
     {
         cout << "input was not vaild\n";
+
         return 0;
     }
 
@@ -167,51 +184,64 @@ int main()
 
             if (input == Operation::Multiply)
             {
-                cout << "Multiply Selected\n";
                 int b;
+
+                cout << "Multiply Selected\n";
                 cout << "Enter Second number: ";
                 cin >> b;
+
                 cout << "Working...\n";
                 result = mult(result, b);
+
                 cout << "Your result is: " << result << "\n";
             }
 
             if (input == Operation::Subtract)
             {
-                cout << "Subtract Selected\n";
                 int b;
+
+                cout << "Subtract Selected\n";
                 cout << "Enter Second number: ";
                 cin >> b;
+
                 cout << "Working...\n";
                 result = sub(result, b);
+
                 cout << "Your result is: " << result << "\n";
             }
 
             if (input == Operation::Add)
             {
-                cout << "Add Selected \n";
                 int b;
+
+                cout << "Add Selected \n";
                 cout << "Enter Second number: ";
                 cin >> b;
+
                 cout << "Working...\n";
                 result = add(result, b);
+
                 cout << "Your result is: " << result << "\n";
             }
 
             if (input == Operation::Divide)
             {
-                cout << "Divide Selected\n";
                 int b;
+
+                cout << "Divide Selected\n";
                 cout << "Enter Second number: ";
                 cin >> b;
+
                 cout << "Working...\n";
                 result = divide(result, b);
+
                 cout << "Your result is: " << result << "\n";
             }
 
             if (input > 4 || input <= 0)
             {
                 cout << "input was not vaild\n";
+
                 return 0;
             }
 
