@@ -1,17 +1,40 @@
 #include <iostream>
 
+using std::cerr;
 using std::cin;
 using std::cout;
+
+enum Operation { Multiply = 1, Subtract, Add, Divide };
 
 int add    (int first, int second) { return first + second; }
 int mult   (int first, int second) { return first * second; }
 int sub    (int first, int second) { return first - second; }
 int divide (int first, int second) { return first / second; }
 
+int runOperation (int operation, int a, int b)
+{
+    switch (operation)
+    {
+        case Operation::Multiply:
+            return mult(a, b);
+
+        case Operation::Subtract:
+            return sub(a, b);
+
+        case Operation::Add:
+            return add(a, b);
+
+        case Operation::Divide:
+            return divide(a, b);
+
+        default:
+            cerr << "Invalid operation in `runOperation`\n";
+            exit(0);
+    }
+}
+
 int main()
 {
-    enum Operation { Multiply = 1, Subtract, Add, Divide };
-
     int a, b;
     int input;
     int result;
@@ -39,24 +62,7 @@ int main()
     cin >> b;
     cout << "Working...\n";
 
-    switch (input)
-    {
-        case Operation::Multiply:
-            result = mult(a, b);
-            break;
-
-        case Operation::Subtract:
-            result = sub(a, b);
-            break;
-
-        case Operation::Add:
-            result = add(a, b);
-            break;
-
-        case Operation::Divide:
-            result = divide(a, b);
-            break;
-    }
+    result = runOperation(input, a, b);
     
     cout << "Your result is: " << result << "\n";
 
@@ -104,25 +110,7 @@ int main()
 
             cout << "Working...\n";
 
-            switch (input)
-            {
-                case Operation::Multiply:
-                    result = mult(result, b);
-                    break;
-
-                case Operation::Subtract:
-                    result = sub(result, b);
-                    break;
-
-                case Operation::Add:
-                    result = add(result, b);
-                    break;
-
-                case Operation::Divide:
-                    result = divide(result, b);
-
-                    break;
-            }
+            result = runOperation(input, result, b);
 
             cout << "Your result is: " << result << "\n";
 
