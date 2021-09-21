@@ -21,7 +21,7 @@ int sub (int first, int second)
     return (first - second);
 }
 
-int divide ( int first, int second)
+int divide (int first, int second)
 {
     cout << "Received " << first << " and " << second << "\n";
     return (first / second);
