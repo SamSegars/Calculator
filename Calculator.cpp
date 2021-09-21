@@ -95,20 +95,19 @@ void elicitInput(int &a, int &b, bool elicitA)
 
 int main()
 {
-    int a, b;
-    int input;
-    int result;
+    int a;
     int again = false;
 
     do
     {
-        input = elicitOperation();
+        int b;
+        int input = elicitOperation();
 
         elicitInput(a, b, !again);
 
         cout << "Working...\n";
 
-        result = runOperation(input, a, b);
+        int result = runOperation(input, a, b);
 
         cout << "Your result is: " << result << "\n";
 
