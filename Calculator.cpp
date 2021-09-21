@@ -112,8 +112,7 @@ int main()
         cout << "Your result is: " << result << "\n";
 
         a = result;
-        again = elicitContinue();
-    } while (again);
+    } while ((again = elicitContinue()));
 
     cout << "Have a fantastic day";
 
