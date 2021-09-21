@@ -3,33 +3,10 @@
 using std::cin;
 using std::cout;
 
-int add (int first, int second)
-{
-    cout << "Received " << first << " and " << second << "\n";
-
-    return first + second;
-}
-
-int mult (int first, int second)
-{
-    cout << "Received " << first << " and " << second << "\n";
-
-    return first * second;
-}
-
-int sub (int first, int second)
-{
-    cout << "Received " << first << " and " << second << "\n";
-
-    return first - second;
-}
-
-int divide (int first, int second)
-{
-    cout << "Received " << first << " and " << second << "\n";
-
-    return first / second;
-}
+int add    (int first, int second) { return first + second; }
+int mult   (int first, int second) { return first * second; }
+int sub    (int first, int second) { return first - second; }
+int divide (int first, int second) { return first / second; }
 
 int main()
 {
@@ -60,7 +37,6 @@ int main()
         int a, b;
 
         case Operation::Multiply:
-            cout << "Multiply Selected\n";
             cout << "Enter First number: " ;
             cin >> a;
 
@@ -74,7 +50,6 @@ int main()
             break;
 
         case Operation::Subtract:
-            cout << "Subtract Selected\n";
             cout << "Enter First number: ";
             cin >> a;
 
@@ -88,7 +63,6 @@ int main()
             break;
 
         case Operation::Add:
-            cout << "Add Selected \n";
             cout << "Enter First number: " ;
             cin >> a;
 
@@ -102,7 +76,6 @@ int main()
             break;
 
         case Operation::Divide:
-            cout << "Divide Selected\n";
             cout << "Enter First number: " ;
             cin >> a;
 
@@ -158,7 +131,6 @@ int main()
                 int b;
 
                 case Operation::Multiply:
-                    cout << "Multiply Selected\n";
                     cout << "Enter Second number: ";
                     cin >> b;
 
@@ -169,7 +141,6 @@ int main()
                     break;
 
                 case Operation::Subtract:
-                    cout << "Subtract Selected\n";
                     cout << "Enter Second number: ";
                     cin >> b;
 
@@ -180,7 +151,6 @@ int main()
                     break;
 
                 case Operation::Add:
-                    cout << "Add Selected \n";
                     cout << "Enter Second number: ";
                     cin >> b;
 
@@ -191,7 +161,6 @@ int main()
                     break;
 
                 case Operation::Divide:
-                    cout << "Divide Selected\n";
                     cout << "Enter Second number: ";
                     cin >> b;
 
