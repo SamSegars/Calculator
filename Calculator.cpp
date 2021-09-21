@@ -98,39 +98,23 @@ int main()
     int a, b;
     int input;
     int result;
-    int again;
+    int again = false;
 
-    input = elicitOperation();
-
-    elicitInput(a, b, true);
-
-    cout << "Working...\n";
-
-    result = runOperation(input, a, b);
-    
-    cout << "Your result is: " << result << "\n";
-
-    again = elicitContinue();
-    a = result;
-
-    if (again)
+    do
     {
-        do
-        {
-            input = elicitOperation();
+        input = elicitOperation();
 
-            elicitInput(a, b, false);
+        elicitInput(a, b, !again);
 
-            cout << "Working...\n";
+        cout << "Working...\n";
 
-            result = runOperation(input, result, b);
+        result = runOperation(input, a, b);
 
-            cout << "Your result is: " << result << "\n";
+        cout << "Your result is: " << result << "\n";
 
-            again = elicitContinue();
-            a = result;
-        } while (again);
-    }
+        a = result;
+        again = elicitContinue();
+    } while (again);
 
     cout << "Have a fantastic day";
 
