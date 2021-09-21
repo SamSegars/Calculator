@@ -6,13 +6,13 @@ int add (int first, int second)
     return (first + second);
 }
 // Makes Multiply Function
-int Mult (int first, int second)
+int mult (int first, int second)
 {
     std::cout << "Received " << first << " and " << second << "\n";
     return (first * second);
 }
 // Makes Subtraction Function
-int Sub (int first, int second)
+int sub (int first, int second)
 {
     std::cout << "Received " << first << " and " << second << "\n";
     return (first - second);
@@ -60,7 +60,7 @@ int main()
         cout << "Enter Second number: ";
         cin >> b;
         cout << "Working...\n";
-        result=Mult(a,b);
+        result=mult(a,b);
         cout << "Your result is: " << result << "\n";
     }
     if(Input == Subtract)
@@ -71,7 +71,7 @@ int main()
         cout << "Enter Second number: ";
         cin >> b;
         cout << "Working...\n";
-        result=Sub(a,b);
+        result=sub(a,b);
         cout << "Your result is: " << result << "\n";
     }
     if (Input == Add)
@@ -147,7 +147,7 @@ int main()
                 cout << "Enter Second number: ";
                 cin >> b;
                 cout << "Working...\n";
-                result=Mult(result,b);
+                result=mult(result,b);
                 cout << "Your result is: " << result << "\n";
             }
             if(Input == Subtract)
@@ -156,7 +156,7 @@ int main()
                 cout << "Enter Second number: ";
                 cin >> b;
                 cout << "Working...\n";
-                result=Sub(result,b);
+                result=sub(result,b);
                 cout << "Your result is: " << result << "\n";
             }
             if (Input == Add)
