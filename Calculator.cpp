@@ -63,8 +63,8 @@ int elicitContinue()
     do
     {
         cout << "Are you ready to exit?\n";
-        cout <<  "0 = No, continue summing\n";
         cout <<  "1 = Yes\n";
+        cout <<  "0 = No, continue with accumulated result\n";
         cout << "Enter Option:";
         cin >> input;
 
@@ -74,7 +74,7 @@ int elicitContinue()
         }
     } while (input != 0 && input != 1);
 
-    return input;
+    return !input;
 }
 
 int main()
@@ -99,7 +99,7 @@ int main()
 
     again = elicitContinue();
 
-    if (again == 1)
+    if (again)
     {
         do
         {
@@ -115,7 +115,7 @@ int main()
             cout << "Your result is: " << result << "\n";
 
             again = elicitContinue();
-        } while (again == 1);
+        } while (again);
     }
 
     cout << "Have a fantastic day";
