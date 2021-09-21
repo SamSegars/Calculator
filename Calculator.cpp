@@ -33,11 +33,9 @@ int runOperation (int operation, int a, int b)
     }
 }
 
-int main()
+int elicitOperation()
 {
-    int a, b;
     int input;
-    int result;
 
     do
     {
@@ -54,6 +52,17 @@ int main()
             cout << "Invalid Selection\n";
         }
     } while (input <= 0 || input >= 5);
+
+    return input;
+}
+
+int main()
+{
+    int a, b;
+    int input;
+    int result;
+
+    input = elicitOperation();
 
     cout << "Enter First number: ";
     cin >> a;
@@ -87,21 +96,7 @@ int main()
     {
         do
         {
-            do
-            {
-                cout << "Options\n";
-                cout << "1 = Multiply\n";
-                cout << "2 = Subtract\n";
-                cout << "3 = Add\n";
-                cout << "4 = Divide\n";
-                cout << "Enter Option: ";
-                cin >> input;
-
-                if (input <= 0 || input >= 5)
-                {
-                    cout << "Invalid Selection\n";
-                }
-            } while (input <= 0 || input >= 5);
+            input = elicitOperation();
 
             int b;
 
